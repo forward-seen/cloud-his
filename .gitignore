@@ -1,3 +1,7 @@
+# Development Environment
+.idea
+.vscode
+
 # Compiled class file
 *.class
 
