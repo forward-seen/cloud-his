@@ -1,8 +1,7 @@
 package com.symc.his.api.impl.feign;
 
+import com.symc.his.api.weixin.WeChatService;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * @Description: 微信服务接口Feign
@@ -12,8 +11,5 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @Author: 辛凤文 forward.seen@foxmail.com
  */
 @FeignClient("his-weixin")
-public interface WeChatServiceFeign {
-
-    @GetMapping("/getWeChat")
-    String getWeChat(@RequestParam("a")Integer a);
+public interface WeChatServiceFeign extends WeChatService {
 }
