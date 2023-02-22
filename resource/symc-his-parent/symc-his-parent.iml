@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<module version="4" relativePaths="false" type="JAVA_MODULE"> 
+  <component name="NewModuleRootManager"> 
+    <exclude-output/>  
+    <orderEntry type="inheritedJdk"/>  
+    <!-- output url="file://$$MODULE_DIR$$/${maven.build.dest}"/ -->  
+    <!-- output-test url="file://$$MODULE_DIR$$/${maven.test.dest}"/ -->  
+    <content url="file://$MODULE_DIR$"> 
+      <!-- sourceFolder url="file://$$MODULE_DIR$$/${pom.build.sourceDirectory}" isTestSource="false"/ -->  
+      <!-- sourceFolder url="file://$$MODULE_DIR$$/${pom.build.testSourceDirectory}" isTestSource="true"/ -->  
+      <excludeFolder url="file://$MODULE_DIR$/target"/>
+    </content>  
+    <orderEntry type="sourceFolder" forTests="false"/>  
+    <!-- Next include each dependency:
+      <orderEntry type="module" module-name="${dep.artifactId}"/>
+      <orderEntry type="module-library">
+        <library name="${dep.artifactId}">
+          <CLASSES>
+            <root url="jar://${lib.path}!/"/>
+          </CLASSES>
+          <JAVADOC/>
+          <SOURCES/>
+        </library>
+      </orderEntry>
+     -->  
+    <output url="file://$MODULE_DIR$/target/classes"/>
+    <output-test url="file://$MODULE_DIR$/target/test-classes"/>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/springframework/cloud/spring-cloud-starter-openfeign/2.1.0.RELEASE/spring-cloud-starter-openfeign-2.1.0.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/springframework/cloud/spring-cloud-starter/2.1.0.RELEASE/spring-cloud-starter-2.1.0.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/springframework/boot/spring-boot-starter/2.1.11.RELEASE/spring-boot-starter-2.1.11.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/springframework/boot/spring-boot/2.1.11.RELEASE/spring-boot-2.1.11.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/springframework/spring-core/5.1.12.RELEASE/spring-core-5.1.12.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/springframework/spring-jcl/5.1.12.RELEASE/spring-jcl-5.1.12.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/springframework/spring-context/5.1.12.RELEASE/spring-context-5.1.12.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/springframework/spring-aop/5.1.12.RELEASE/spring-aop-5.1.12.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/springframework/spring-beans/5.1.12.RELEASE/spring-beans-5.1.12.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/springframework/spring-expression/5.1.12.RELEASE/spring-expression-5.1.12.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.11.RELEASE/spring-boot-autoconfigure-2.1.11.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/springframework/boot/spring-boot-starter-logging/2.1.11.RELEASE/spring-boot-starter-logging-2.1.11.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/slf4j/slf4j-api/1.7.29/slf4j-api-1.7.29.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/apache/logging/log4j/log4j-to-slf4j/2.11.2/log4j-to-slf4j-2.11.2.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/apache/logging/log4j/log4j-api/2.11.2/log4j-api-2.11.2.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/slf4j/jul-to-slf4j/1.7.29/jul-to-slf4j-1.7.29.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/springframework/cloud/spring-cloud-context/2.1.0.RELEASE/spring-cloud-context-2.1.0.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/springframework/security/spring-security-crypto/5.1.7.RELEASE/spring-security-crypto-5.1.7.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/springframework/cloud/spring-cloud-commons/2.1.0.RELEASE/spring-cloud-commons-2.1.0.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/springframework/security/spring-security-rsa/1.0.7.RELEASE/spring-security-rsa-1.0.7.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/bouncycastle/bcpkix-jdk15on/1.60/bcpkix-jdk15on-1.60.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/bouncycastle/bcprov-jdk15on/1.60/bcprov-jdk15on-1.60.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/springframework/cloud/spring-cloud-openfeign-core/2.1.0.RELEASE/spring-cloud-openfeign-core-2.1.0.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/springframework/cloud/spring-cloud-netflix-ribbon/2.1.0.RELEASE/spring-cloud-netflix-ribbon-2.1.0.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/springframework/cloud/spring-cloud-netflix-archaius/2.1.0.RELEASE/spring-cloud-netflix-archaius-2.1.0.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/springframework/boot/spring-boot-starter-aop/2.1.11.RELEASE/spring-boot-starter-aop-2.1.11.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/aspectj/aspectjweaver/1.9.5/aspectjweaver-1.9.5.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/io/github/openfeign/form/feign-form-spring/3.5.0/feign-form-spring-3.5.0.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/io/github/openfeign/form/feign-form/3.5.0/feign-form-3.5.0.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/springframework/spring-web/5.1.12.RELEASE/spring-web-5.1.12.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/commons-fileupload/commons-fileupload/1.3.3/commons-fileupload-1.3.3.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/commons-io/commons-io/2.2/commons-io-2.2.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/io/github/openfeign/feign-core/10.1.0/feign-core-10.1.0.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/io/github/openfeign/feign-slf4j/10.1.0/feign-slf4j-10.1.0.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/io/github/openfeign/feign-hystrix/10.1.0/feign-hystrix-10.1.0.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/com/netflix/archaius/archaius-core/0.7.6/archaius-core-0.7.6.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/commons-configuration/commons-configuration/1.8/commons-configuration-1.8.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/com/google/guava/guava/22.0/guava-22.0.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.10/jackson-annotations-2.9.10.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/com/fasterxml/jackson/core/jackson-core/2.9.10/jackson-core-2.9.10.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.1/jackson-databind-2.9.10.1.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/com/netflix/hystrix/hystrix-core/1.5.18/hystrix-core-1.5.18.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/io/reactivex/rxjava/1.3.8/rxjava-1.3.8.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/hdrhistogram/HdrHistogram/2.1.9/HdrHistogram-2.1.9.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/projectlombok/lombok/1.18.10/lombok-1.18.10.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/springframework/boot/spring-boot-starter-web/2.1.11.RELEASE/spring-boot-starter-web-2.1.11.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/springframework/boot/spring-boot-starter-json/2.1.11.RELEASE/spring-boot-starter-json-2.1.11.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.9.10/jackson-datatype-jdk8-2.9.10.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.10/jackson-datatype-jsr310-2.9.10.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.10/jackson-module-parameter-names-2.9.10.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/springframework/boot/spring-boot-starter-tomcat/2.1.11.RELEASE/spring-boot-starter-tomcat-2.1.11.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.29/tomcat-embed-core-9.0.29.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.29/tomcat-embed-el-9.0.29.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.29/tomcat-embed-websocket-9.0.29.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/hibernate/validator/hibernate-validator/6.0.18.Final/hibernate-validator-6.0.18.Final.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/jboss/logging/jboss-logging/3.3.3.Final/jboss-logging-3.3.3.Final.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/com/fasterxml/classmate/1.4.0/classmate-1.4.0.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/springframework/spring-webmvc/5.1.12.RELEASE/spring-webmvc-5.1.12.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/com/alibaba/cloud/spring-cloud-alibaba-nacos-discovery/2.1.1.RELEASE/spring-cloud-alibaba-nacos-discovery-2.1.1.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/com/alibaba/nacos/nacos-client/1.1.4/nacos-client-1.1.4.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/com/alibaba/nacos/nacos-common/1.1.4/nacos-common-1.1.4.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/com/alibaba/nacos/nacos-api/1.1.4/nacos-api-1.1.4.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/com/alibaba/fastjson/1.2.58/fastjson-1.2.58.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/io/prometheus/simpleclient/0.5.0/simpleclient-0.5.0.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/springframework/cloud/spring-cloud-starter-netflix-ribbon/2.1.0.RELEASE/spring-cloud-starter-netflix-ribbon-2.1.0.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/springframework/cloud/spring-cloud-starter-netflix-archaius/2.1.0.RELEASE/spring-cloud-starter-netflix-archaius-2.1.0.RELEASE.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/com/netflix/ribbon/ribbon/2.3.0/ribbon-2.3.0.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/com/netflix/ribbon/ribbon-core/2.3.0/ribbon-core-2.3.0.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/com/netflix/ribbon/ribbon-transport/2.3.0/ribbon-transport-2.3.0.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/com/netflix/ribbon/ribbon-loadbalancer/2.3.0/ribbon-loadbalancer-2.3.0.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/com/netflix/netflix-commons/netflix-statistics/0.1.1/netflix-statistics-0.1.1.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/com/netflix/servo/servo-core/0.12.21/servo-core-0.12.21.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/com/netflix/netflix-commons/netflix-commons-util/0.3.0/netflix-commons-util-0.3.0.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/javax/inject/javax.inject/1/javax.inject-1.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/io/reactivex/rxnetty/0.4.9/rxnetty-0.4.9.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/io/reactivex/rxnetty-contexts/0.4.9/rxnetty-contexts-0.4.9.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/io/reactivex/rxnetty-servo/0.4.9/rxnetty-servo-0.4.9.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/com/netflix/ribbon/ribbon-httpclient/2.3.0/ribbon-httpclient-2.3.0.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/apache/httpcomponents/httpclient/4.5.10/httpclient-4.5.10.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/org/apache/httpcomponents/httpcore/4.4.12/httpcore-4.4.12.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/com/sun/jersey/jersey-client/1.19.1/jersey-client-1.19.1.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/com/sun/jersey/jersey-core/1.19.1/jersey-core-1.19.1.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Maven/repository/com/sun/jersey/contribs/jersey-apache-client4/1.19.1/jersey-apache-client4-1.19.1.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+  </component>  
+  <component name="ModuleRootManager"/>  
+  <!-- If it's a war project:
+  <component name="WebModuleProperties">
+    <containerElement type="module" name="${dep.artifactId}">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/classes" />
+    </containerElement>
+    <containerElement type="library" level="module" name="${dep.artifactId}">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/${dep.systemPath.name}" />
+    </containerElement>
+    <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/${pom.build.warSourceDirectory}/WEB-INF/web.xml" version="" />
+    <webroots>
+      <root url="file://$MODULE_DIR$/${pom.build.warSourceDirectory}" relative="/" />
+    </webroots>
+  </component>
+  --> 
+</module>
