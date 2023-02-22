@@ -1,6 +1,6 @@
-package com.symc.api.base;
+package com.symc.his.api.base;
 
-import com.symc.api.constants.HttpConstants;
+import com.symc.his.api.constants.HttpConstants;
 import lombok.Data;
 
 /**

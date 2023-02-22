@@ -1,7 +1,7 @@
 package com.symc.his.api.impl.order;
 
-import com.symc.api.base.BaseApiService;
-import com.symc.api.base.BaseResponse;
+import com.symc.his.api.base.BaseApiService;
+import com.symc.his.api.base.BaseResponse;
 import com.symc.his.api.impl.feign.WeChatServiceFeign;
 import com.symc.his.api.order.OrderService;
 import javax.annotation.Resource;
@@ -26,6 +26,11 @@ public class OrderServiceImpl extends BaseApiService implements OrderService {
     }
 
     @Override public BaseResponse<String> orderToWeChatJson(Integer a) {
+        return setResultSuccess(weChatServiceFeign.getWeChat(a));
+    }
+
+    @Override public BaseResponse<String> orderToWeChatException(Integer a) {
+        int b = 1/0;
         return setResultSuccess(weChatServiceFeign.getWeChat(a));
     }
 }

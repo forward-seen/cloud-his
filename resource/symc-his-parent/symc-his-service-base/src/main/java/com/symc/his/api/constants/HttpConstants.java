@@ -1,4 +1,4 @@
-package com.symc.api.constants;
+package com.symc.his.api.constants;
 
 /**
  * @Description: HTTP协议相关常量，包括状态码、状态详细

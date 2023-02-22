@@ -1,4 +1,4 @@
-package com.symc.api.base;
+package com.symc.his.api.base;
 
 import lombok.Data;
 
