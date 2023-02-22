@@ -1,0 +1,11 @@
+spring:
+  application:
+    ###服务的名称
+    name: mayikt-weixin
+  cloud:
+    nacos:
+      discovery:
+        ###nacos注册地址
+        server-addr: 127.0.0.1:8848
+server:
+  port: 9000
