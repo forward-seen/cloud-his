@@ -1,5 +1,7 @@
 package com.symc.his.api.impl.order;
 
+import com.symc.api.base.BaseApiService;
+import com.symc.api.base.BaseResponse;
 import com.symc.his.api.impl.feign.WeChatServiceFeign;
 import com.symc.his.api.order.OrderService;
 import javax.annotation.Resource;
@@ -13,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Author: 辛凤文 forward.seen@foxmail.com
  */
 @RestController
-public class OrderServiceImpl implements OrderService {
+public class OrderServiceImpl extends BaseApiService implements OrderService {
 
     @Resource
     private WeChatServiceFeign weChatServiceFeign;
@@ -21,5 +23,9 @@ public class OrderServiceImpl implements OrderService {
     @Override public String orderToWeChat(Integer a) {
         //feign远程调用微信接口
         return weChatServiceFeign.getWeChat(a);
+    }
+
+    @Override public BaseResponse<String> orderToWeChatJson(Integer a) {
+        return setResultSuccess(weChatServiceFeign.getWeChat(a));
     }
 }

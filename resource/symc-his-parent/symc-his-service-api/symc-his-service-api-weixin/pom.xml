@@ -12,5 +12,13 @@
 
     <artifactId>symc-his-service-api-weixin</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.symc</groupId>
+            <artifactId>symc-his-service-base</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 
 </project>

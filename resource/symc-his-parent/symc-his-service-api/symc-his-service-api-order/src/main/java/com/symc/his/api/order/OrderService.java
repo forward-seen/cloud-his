@@ -1,5 +1,6 @@
 package com.symc.his.api.order;
 
+import com.symc.api.base.BaseResponse;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -14,4 +15,7 @@ public interface OrderService {
 
     @GetMapping("/orderToWeChat")
     String orderToWeChat(@RequestParam("a") Integer a);
+
+    @GetMapping("/orderToWeChatJson")
+    BaseResponse<String> orderToWeChatJson(@RequestParam("a") Integer a);
 }

@@ -13,6 +13,7 @@
         <module>symc-his-service-impl</module>
         <module>symc-his-service-api/symc-his-service-api-weixin</module>
         <module>symc-his-service-api/symc-his-service-api-order</module>
+        <module>symc-his-service-base</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
