@@ -1,6 +1,7 @@
 package com.symc.his.api.base;
 
 import com.symc.his.api.constants.HttpConstants;
+import com.symc.his.api.utils.BeanUtils;
 import lombok.Data;
 
 /**
@@ -67,4 +68,38 @@ public class BaseApiService<T> {
         return new BaseResponse<T>(code, msg, data);
     }
 
+    /**
+     * dto 转换do
+     *
+     * @param DTO
+     * @param DO_Class
+     * @param <DO>
+     * @return
+     */
+    public static <DO> DO DTO2DO(Object DTO, Class<DO> DO_Class) {
+        return BeanUtils.DTO2DO(DTO,DO_Class);
+    }
+
+    /**
+     * do转换成dto
+     * @param DO
+     * @param DTO_Class
+     * @param <DTO>
+     * @return
+     */
+    public static <DTO> DTO DO2DTO(Object DO, Class<DTO> DTO_Class) {
+        return BeanUtils.DO2DTO(DO,DTO_Class);
+    }
+
+    /**
+     *
+     * @param dbCount 访问数据库返回的影响行数
+     * @param successMsg
+     * @param errorMsg
+     * @return
+     */
+    public BaseResponse<T> setResultDB(int dbCount, T successMsg, String errorMsg) {
+        return dbCount > 0 ? setResultSuccess(successMsg) :
+            setResultError(errorMsg);
+    }
 }
