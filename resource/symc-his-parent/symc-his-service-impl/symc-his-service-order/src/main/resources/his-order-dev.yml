@@ -9,6 +9,7 @@ spring:
       discovery:
         ###nacos注册地址
         server-addr: 127.0.0.1:8848
+      
   datasource:
     # 数据库类型
 #    type: com.alibaba.druid.pool.DruidDataSource

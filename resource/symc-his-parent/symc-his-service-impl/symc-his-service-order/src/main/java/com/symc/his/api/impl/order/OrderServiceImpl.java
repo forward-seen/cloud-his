@@ -9,6 +9,7 @@ import com.symc.his.api.order.OrderService;
 import com.symc.his.api.order.dto.req.UserReqDTO;
 import com.symc.his.api.order.dto.resp.UserRespDTO;
 import javax.annotation.Resource;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -26,6 +27,9 @@ public class OrderServiceImpl extends BaseApiService implements OrderService {
 
     @Resource
     private UserMapper userMapper;
+
+    @Value("${symc.app-name}")
+    private String appName ;
 
     @Override public String orderToWeChat(Integer a) {
         //feign远程调用微信接口
@@ -59,5 +63,9 @@ public class OrderServiceImpl extends BaseApiService implements OrderService {
         }
         UserRespDTO userRespDTO = DO2DTO(getUserDO, UserRespDTO.class);
         return setResultSuccess(userRespDTO);
+    }
+
+    @Override public String getTestConfig() {
+        return appName;
     }
 }

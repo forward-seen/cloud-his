@@ -6,6 +6,7 @@ import com.symc.his.api.order.dto.resp.UserRespDTO;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
@@ -48,4 +49,11 @@ public interface OrderService {
      */
     @PostMapping("/updateUser")
     BaseResponse<UserRespDTO> updateUserDTO(@RequestBody UserReqDTO userReqDTO);
+
+    /**
+     * 测试nacos config
+     * @return
+     */
+    @RequestMapping("/getTestConfig")
+    String getTestConfig();
 }
